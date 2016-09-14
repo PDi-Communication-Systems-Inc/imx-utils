@@ -22,6 +22,10 @@
  * Copyright Boundary Devices, Inc. 2010
  */
 
+#define  LOG_TAG    "fb2_overlay"  
+#define  LOGI(...)  __android_log_print(ANDROID_LOG_INFO,LOG_TAG,__VA_ARGS__)  
+#define  LOGE(...)  __android_log_print(ANDROID_LOG_ERROR,LOG_TAG,__VA_ARGS__)
+
 class fb2_overlay_t {
 public:
 	enum {
