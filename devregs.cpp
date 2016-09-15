@@ -642,7 +642,7 @@ int main(int argc, char const **argv)
 		fprintf(stderr, "Error reading CPU type\n");
 		return -1 ;
 	}
-//	printf( "CPU type is 0x%x\n", cpu);
+	printf( "CPU type is 0x%x\n", cpu);
         registerDefs(cpu);
 	if( 1 == argc ){
                 struct reglist_t const *defs = registerDefs();
