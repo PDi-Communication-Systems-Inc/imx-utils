@@ -639,8 +639,8 @@ int main(int argc, char const **argv)
 	parseArgs(argc,argv);
 
 	if (!getcpu(cpu)) {
-		fprintf(stderr, "Error reading CPU type\n");
-		return -1 ;
+		fprintf(stderr, "Error reading CPU type, forcing imx.6\n");
+		cpu = 0x63000;
 	}
 	printf( "CPU type is 0x%x\n", cpu);
         registerDefs(cpu);
